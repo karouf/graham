@@ -1,0 +1,7 @@
+<% if @stocks.empty? %>
+  <p>No positives</p>
+<% else %>
+  <% @stocks.each do |stock| %>
+    <%= stock.symbol %>
+  <% end %>
+<% end %>
